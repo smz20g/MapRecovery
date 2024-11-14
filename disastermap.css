@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle, #e0eafc 10%, #cfdef3 90%);
+    background: linear-gradient(to right, #a8e6cf, #dcedc1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,33 +11,56 @@ body {
     color: #333;
 }
 
-/* Map Card Styling */
 #map {
-    height: 350px;
-    width: 90%;
-    max-width: 700px;
+    height: 500px;
+    width: 95%;
+    max-width: 1000px;
     border-radius: 20px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
     margin-top: 30px;
     overflow: hidden;
+    border: 3px solid #4a90e2;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    border: 2px solid #4a90e2;
 }
 
 #map:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.25);
 }
 
-/* Form Container Styling */
+.menu {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item:hover {
+    background: #56c7d3;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 #form-container {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.9);
     max-width: 700px;
     width: 90%;
-    padding: 40px 30px;
-    margin-top: 30px;
+    padding: 30px;
+    margin-top: 25px;
     border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,19 +71,19 @@ body {
 
 #form-container:hover {
     transform: translateY(-6px);
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
 }
 
 /* Form Heading */
 #form-container h3 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: #4a90e2;
     margin-bottom: 25px;
     text-align: center;
-    background: linear-gradient(to right, #4a90e2, #4d79d8);
+    font-weight: bold;
+    background: linear-gradient(to right, #4a90e2, #56c7d3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 700;
 }
 
 /* Form Label and Input Styling */
@@ -95,7 +118,7 @@ body {
 /* Submit Button Styling */
 button[type="submit"] {
     margin-top: 25px;
-    padding: 14px 40px;
+    padding: 12px 40px;
     font-size: 1.2em;
     color: #ffffff;
     background: linear-gradient(135deg, #4a90e2, #357abd);
@@ -144,11 +167,11 @@ button[type="submit"]:active {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     #map {
-        height: 280px;
+        height: 400px;
     }
     
     #form-container {
-        padding: 25px;
+        padding: 20px;
     }
 
     button[type="submit"] {
