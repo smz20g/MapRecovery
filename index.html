@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>MapRecovery: The User-Friendly Disaster Recovery Tool</title>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRTmZ2SVpN6k0wsDzwNtY2Cr6q7U5NM-o&libraries=visualization,places"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBREygm4RPoOz4ByJd06ZbVZ_jy5WWFZzE&libraries=visualization,places"></script>
   <script src="disastermap.js"></script>
   <link rel="stylesheet" href="disastermap.css">
 </head>
@@ -13,7 +13,7 @@
     <form id="damage-form">
       <label for="address">Address:</label>
       <input type="text" id="address" placeholder="Enter address" required><br>
-      
+
       <label for="damage-type">Damage Type:</label>
       <select id="damage-type" required>
         <option value="cracks">Cracks</option>
@@ -21,9 +21,12 @@
         <option value="electrical">Electrical</option>
         <option value="other">Other</option>
       </select><br>
-      
+
+      <button type="button" id="mark-map">Mark on Map</button><br>
+      <input type="hidden" id="lat" />
+      <input type="hidden" id="lng" />
+
       <button type="submit">Submit Damage Report</button>
-    </form>
-  </div>
+    </form>  </div>
 </body>
 </html>

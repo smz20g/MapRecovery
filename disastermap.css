@@ -178,3 +178,37 @@ button[type="submit"]:active {
         width: 100%;
     }
 }
+
+/* Mark on Map Button Styling */
+#mark-map {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #333; /* Dark gray text */
+    background: #e0e0e0; /* Light gray background */
+    border: 1px solid #bbb; /* Subtle border for definition */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#mark-map:hover {
+    background: #d0d0d0; /* Slightly darker gray on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#mark-map:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#mark-map:disabled {
+    background: #f0f0f0; /* Lighter gray for disabled state */
+    color: #aaa;
+    cursor: not-allowed;
+    box-shadow: none;
+    border-color: #ddd;
+}
