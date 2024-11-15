@@ -22,11 +22,16 @@
         <option value="other">Other</option>
       </select><br>
 
-      <button type="button" id="mark-map">Mark on Map</button><br>
+      <div class="button-row">
+        <button type="button" id="mark-map">Mark on Map</button>
+        <button type="button" id="add-photo-btn">Add Photos</button>
+        <input id="photo" type="file" accept="image/*" style="display:none;">
+        <div id="photo-preview" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;"></div>
+      </div>
       <input type="hidden" id="lat" />
       <input type="hidden" id="lng" />
-
       <button type="submit">Submit Damage Report</button>
-    </form>  </div>
+    </form>
+  </div>
 </body>
 </html>
